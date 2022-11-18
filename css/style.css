@@ -1,0 +1,115 @@
+:root {
+    --primary-color: rgb(17, 86, 106);
+    --second-color-darker: rgb(9, 48, 56);
+    --color-container: #ffffff;
+    --color-button: #fff;
+    --color-button-active: #00d9ff;
+
+    --primary-font: 'Open Sans', sans-serif;
+}
+
+* {
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: var(--primary-color);
+
+    font-family: var(--primary-font);
+
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.resultado {
+    margin-left: 15rem;
+}
+
+ header {
+    display: flex;
+
+    font-size: 1.5rem;
+ }
+ 
+main h1 {
+    font-size: 2rem;
+}
+
+.container {
+    border-radius: 1rem;
+    max-width: 50rem;
+    margin: 5rem auto;
+    padding: 2rem;
+
+    background-color: var(--color-container);
+}
+
+form input, form p, form button {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+form span {
+    color: #aba8b4;
+}
+
+form span:hover {
+    color: black;
+    cursor: default;
+}
+
+form input {
+    border-radius: 0.5rem;
+    font-size: 2.4rem;
+    height: 5rem;
+    padding: 0 2rem;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 5rem;
+    cursor: pointer;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+
+form button:hover {
+    background-color: var(--second-color-darker);
+}
+
+form button:active {
+    background-color: #00d9ff;
+}
+
+.result {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+    background-color: rgb(10, 239, 56);
+    border-radius: 0.5rem;
+}
+
+.invalid {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: rgb(251, 155, 11);
+    border-radius: 0.5rem;
+}
