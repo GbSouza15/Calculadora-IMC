@@ -4,6 +4,8 @@ const peso = document.querySelector(".peso")
 const altura = document.querySelector(".altura")
 const invalido = document.querySelector(".invalid")
 
+const classification = ['Magreza', 'Normal', 'Sobrepeso', 'Obesidade Grau 1', 'Obesidade Grau 2', 'Obesidade Grau 3']
+
 
 function isNumeric(num) {
     return ! isNaN(num) && num != ""
@@ -26,17 +28,17 @@ function calcImc() {
 function imc() {
 
     if(resultado < 18.5) {
-        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: Magreza!`
+        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: ${classification[0]}`
     } else if (resultado >= 18.50 && resultado <= 24.99) {
-        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: Normal!`
+        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: ${classification[1]}`
     } else if (resultado >= 25.00 && resultado <= 29.99) {
-        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: Sobrepeso!`
+        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: ${classification[2]}`
     } else if (resultado >= 30.00 && resultado <= 34.99) {
-        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: Obesidade Grau 1`
+        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: ${classification[3]}`
     } else if (resultado >= 35.00 && resultado <= 39.99) {
-        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: Obesidade Grau 2`
+        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: ${classification[4]}`
     } else if (resultado >= 40.00) {
-        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: Obeseidade Grau 3`
+        result.innerHTML = `Seu IMC é de ${resultado} - Classificação: ${classification[5]}`
     } 
 }
 
